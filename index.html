@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Ingreso</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios de Solicitud de Ingreso</h1>
+    </header>
+    <main>
+        <h2>Regístrate en este formulario:</h2>
+        <form action="index.html" method="get" style="display: flex; flex-direction: column;">
+            <fieldset style="display: flex; flex-direction: column;">
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre Completo</label>
+                <input type="text" name="nombre" id="name" maxlength="20" required>
+                
+                <label for="fecha-nac">Fecha de Nacimiento</label>
+                <input type="date" name="fecha-nac" id="fecha-nac">
+
+                <label for="tel">Celular</label>
+                <input type="tel" name="Celular" id="tel" placeholder="1134567890" required>
+            
+                <label for="provincia">¿Cuál es tu Provincia?</label>
+                <select name="provincia" id="provincia">
+                    <option value="">Elige tu Provincia</option>
+                    <option value="CABA">CABA</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Otra Provincia">Otra Provincia</option>
+                </select>
+
+                <label for="DNI">Escribe tu número de DNI</label>
+                <input type="number" id="DNI">
+
+                <label for="DNI_PDF">Carga tu DNI en pdf</label>
+                <input type="file" name="DNI_PDF" id="DNI_PDF">
+            
+            </fieldset>
+
+            
+            <fieldset style="display: flex; flex-direction: column;">
+                <legend>Datos Académicos</legend>
+                <label for="Horarios">Turno que mas te sirve</label>
+
+                <label for="Mañana">
+                    Mañana
+                    <input type="checkbox" name="Manana" id="Manana">
+                </label>
+                
+                
+                <label for="Tarde">
+                    Tarde <input type="checkbox" name="Tarde" id="Tarde"> 
+                </label>
+            
+    
+                <label for="Noche">
+                    Noche <input type="checkbox" name="Noche" id="Noche">  
+                </label> 
+                
+                <label for="Curso_Seleccionado"> Elige el curso que te gustaría inscribirte</label>
+                <select name="Curso_Seleccionado" id="Curso_Seleccionado">
+                    <option value="">Elige el curso</option>
+                    <option value="Fundamentos de Informática">Fundamentos de Informática</option>
+                    <option value="Programación Orientada a Objetos">Programación Orientada a Objetos</option>
+                    <option value="Programación Web">Programación Web</option>
+                </select>
+
+            </fieldset>
+            
+            <fieldset style="display: flex; flex-direction: column;">
+
+                <legend>Datos de Acceso</legend>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="fulanito@gmail.com" required>
+                
+                <label for="password">Coloca tu Contraseña</label>
+                <input type="password" name="password" id="password">
+
+            </fieldset>
+
+            <fieldset style="display: flex; flex-direction: column;">
+                <legend>Comentarios</legend>
+                <label for="Comentarios_Adicionales">Escribe si tienes un comentario adicional:</label>
+                <textarea name="Comentarios_Adicionales" id="Comentarios_Adicionales" cols="30" rows="10"></textarea>
+            </fieldset>
+            
+            <label for="T&C">Terminos y Condiciones <input type="checkbox" name="T&C" id="T&C"></label>
+            
+            <button type="submit" value="Guardar">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
